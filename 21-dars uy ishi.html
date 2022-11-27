@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 21 homewrok</title>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		::selection{color: yellow;
+			background-color: black;}
+		ul.always {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: red;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover:not(.active){
+			background-color: green;
+		}
+		.active{
+			background-color: black;
+		}
+		img{
+				border-radius: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.text{
+				column-count: 3;
+				column-gap: 10px;
+				column-rule-style: solid;
+				column-rule-width: 2px;
+				column-rule-color: red;
+			}
+			.button{
+				background-color: grey;
+				border:none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+			div.square{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			animation-name: muaz;
+			animation-duration: 4s;
+			position: relative;
+			animation-iteration-count: infinite;
+			animation-direction: reverse;
+			}
+			@keyframes muaz{
+			from{background-color: red;}
+			to{background-color: yellow;}
+			0%{background-color: red; left: 0px;top: 0px;}
+			25%{background-color: yellow; left: 100px;top: 0px;}
+			50%{background-color: green; left: 100px;top: 100px;}
+			75%{background-color: blue; left: 0px;top: 100px;}
+			100%{background-color: orange; left: 0px;top: 0px;}
+		}
+		div.loading:hover {width: 100%;}
+		div.loading {
+			width: 100px;
+			height: 25px;
+			background-color: blue;
+			transition: width 4s,height 4s,transform 4s;
+			text-align: center;
+		}
+		.page{
+				display: inline-block;
+			}
+			.page a{
+				color: red;
+				float: left;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+			.page a.active{
+				background-color: green;
+				color: red;
+			}
+			.page a:hover:not(active){
+				background-color: grey;
+			}
+	</style>
+</head>
+<body>
+  	<ul class="always">
+		<li ><a class="active" href="#home"><i class="fa fa-home">Home</i></a></li>
+		<li><a href="#about"><i class="fa fa-users">About</i></a></li>
+		<li><a href="#shop"><i class="fa fa-shopping-cart">Shop</i></a></li>
+		<li><a href="#contact"><i class="fa fa-address-book">Contact</i></a></li>
+	</ul>
+	<h3>Homewrok 21</h3>
+	<img src="hacker.jpg" width="300" height="300">
+	<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	<div class="fa fa-star fa-5x"></div>
+	<div class="fa fa-users fa-5x"></div><br>
+ 	<button>Batafsil</button>
+	<button class="news">News</button>
+	<a href="#" class="button">Hobby</a>
+	<input type="button" class="portfolio" name="Portfolio" value="portfolio">
+	<hr>
+	<div class="square"></div>
+	<div class="loading">Loading...</div><br>
+	<hr>
+	<div class="page">
+	<a href="#"> &laquo;</a>
+	<a href="#" class="active">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">&raquo;</a>
+</div>
+</body>
+</html>
