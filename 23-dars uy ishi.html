@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>23-dars uy ishi</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		::selection{color: yellow;
+			background-color: black;}
+		ul.always {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: red;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover:not(.active){
+			background-color: green;
+		}
+		.active{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<ul class="always">
+		<li ><a class="active" href="#home"><i class="fa fa-home">Home</i></a></li>
+		<li><a href="#about"><i class="fa fa-users">About</i></a></li>
+		<li><a href="#shop"><i class="fa fa-shopping-cart">Shop</i></a></li>
+		<li><a href="#contact"><i class="fa fa-address-book">Contact</i></a></li>
+	</ul>
+	<div class="jumbotron text-center">
+	<h1>Mening sahifam</h1></div>
+	<div class="container" style="background-color: lightgrey">
+		<img src="hacker.jpg" class="rounded-circle img-thumbnail float-left" width="300" height="300">
+		<p style="font-size: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id labroum.</p>
+		<br>
+		<img src="muaz.jpg" class="rounded img-thumbnail" width="300" height="300">
+		<img src="hacker.jpg" class="rounded img-thumbnail" width="300" height="300">
+		<img src="muaz.jpg" class="rounded img-thumbnail" width="300" height="300">
+		<div class="progress" style="height: 20px">
+			<div class="progress-bar bg-danger" style="width: 40%; height: 20px";>Bo'sh</div>
+			<div class="progress-bar bg-warning" style="width: 40%; height: 20px";>To'la</div>
+			<div class="progress-bar bg-info" style="width: 20%; height: 20px";>Cash</div>
+	</div>
+	<div class="progress" style="height: 40px">
+		E-mail<div class="progress-bar progress-bar-striped bg-success" style="width: 35%; height: 40px";>44%</div>
+	</div>
+</body>
+</html>
